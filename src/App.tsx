@@ -35,8 +35,9 @@ export default function App() {
       const r1 = Math.floor(Math.random() * 9) + 1;
       const r2 = Math.floor(Math.random() * 10);
       
-      // Use literal rank (1-13) as requested so 10,11,12,13 are two digits
-      const formattedResult = `0.${r1}${r2}0${cutCard.suit}${cutCard.rank}%`;
+      // Special rule: if the card is already at the selected position (n = 0), use '99' suffix
+      const suffix = n === 0 ? '99' : `${cutCard.suit}${cutCard.rank}`;
+      const formattedResult = `0.${r1}${r2}0${suffix}%`;
       
       setResult(formattedResult);
       setIsCalculating(false);
