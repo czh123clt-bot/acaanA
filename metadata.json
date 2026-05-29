@@ -1,0 +1,6 @@
+{
+  "name": "扑克概率计算器",
+  "description": "浙江大学计算机科学与技术学院 - 扑克概率统计工具",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
